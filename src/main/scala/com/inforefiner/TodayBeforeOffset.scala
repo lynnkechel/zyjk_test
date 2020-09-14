@@ -4,8 +4,8 @@ object TodayBeforeOffset {
 
   def main(args: Array[String]): Unit = {
 
-    var offset = 15
     var prefix = "/tmp/zjd/ALL_ORD/"
+    var offset = 15
     var sep = ","
     var dateFormat = "yyyy-MM-dd-HH"
 
@@ -19,9 +19,7 @@ object TodayBeforeOffset {
         list.add(prefix + sdf.format(calender.getTime()))
         calender.add(java.util.Calendar.HOUR_OF_DAY, 1)
       }
-    }
-
-
+  }
     println(java.lang.String.join(sep, list))
 
   }
