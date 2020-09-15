@@ -11,7 +11,7 @@ object YesterdayAllHour {
     calender.set(java.util.Calendar.HOUR_OF_DAY, 0)
     var sdf = new java.text.SimpleDateFormat("yyyyMMddHH")
     var list = new java.util.ArrayList[String]()
-    var prefix= "/data/zyjk/OF_SERV_FIN/STAG."
+    var prefix= "/data/zyjk/OF_SERV_FIN/STAG. "
     for(j <- 0 to 23){
       list.add(prefix + sdf.format(calender.getTime()))
       calender.add(java.util.Calendar.HOUR_OF_DAY, 1)
