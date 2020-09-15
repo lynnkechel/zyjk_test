@@ -9,7 +9,7 @@ object YesterdayAllHour {
     var calender = java.util.Calendar.getInstance()
     calender.set(java.util.Calendar.DAY_OF_YEAR, calender.get(java.util.Calendar.DAY_OF_YEAR) - 1)
     calender.set(java.util.Calendar.HOUR_OF_DAY, 0)
-    var sdf = new java.text.SimpleDateFormat("yyyyMMdd")
+    var sdf = new java.text.SimpleDateFormat("yyyyMMddHH")
     var list = new java.util.ArrayList[String]()
     var prefix= "/data/zyjk/OF_SERV_FIN/STAG."
     for(j <- 0 to 23){
